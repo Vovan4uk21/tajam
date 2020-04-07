@@ -1,0 +1,112 @@
+/*Swiper*/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+}
+
+/*HEADER*/
+.header-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../media/image/header-background.png") center/cover no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.header-section .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.header-section .content h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+}
+
+.header-section .content hr {
+    background: #00e0d0;
+    height: 1px;
+    width: 50px;
+    border: none;
+    margin-top: 21px;
+}
+
+.header-section .content h5 {
+    color: white;
+    line-height: 1.71;
+    letter-spacing: 0.7px;
+    font-weight: 300;
+    width: 58%;
+    margin: 30px 0 50px 0;
+}
+
+/*OUR-STORY*/
+
+.section-our-story {
+    width: 100%;
+    height: 60vh;
+}
+
+.section-our-story .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-our-story .content .our-story-logo {
+    margin-left: 50px;
+
+}
+.section-our-story .content .our-story-text{
+    width: 56%;
+}
+
+.section-our-story .content h2 {
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+}
+
+.section-our-story .content h5 {
+    line-height: 1.57;
+    letter-spacing: 0.42px;
+    margin: 28px 0px 31px 0px;
+}
+/*Watch OUR STORY*/
+.watch-our-story{
+    position: relative;
+    width: 100%;
+    height: 82vh;
+    background: url("../media/image/background-watch-our-story.png") center/cover no-repeat;
+    background-size: 100% 100%;
+
+}
+.watch-our-story .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+.watch-our-story .content h2{
+    letter-spacing: 0.8px;
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+    margin-top: 34px;
+}
+
