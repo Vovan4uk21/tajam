@@ -20,6 +20,9 @@
     z-index: 1;
     position: relative;
 }
+section{
+ padding: 70px 0;
+}
 
 /*BUTTON*/
 
@@ -98,5 +101,6 @@ header .content .header-nav-menu .header-nav-menu-items:last-child{
 
 header .content .header-nav-menu .header-nav-menu-items:hover{
     color: #00e0d0;
+
 }
 
