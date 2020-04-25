@@ -170,7 +170,7 @@
 
 .expertise-center {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33% ;
+    grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-rows: 50% 50%;
 }
 
@@ -183,7 +183,7 @@
     padding-left: 33px;
 }
 
-.expertise-center  img {
+.expertise-center img {
     margin-top: 32px;
     margin-bottom: 35px;
 }
@@ -381,12 +381,12 @@
 
 .our-works-section-main-box-img {
     display: grid;
-    grid-template-columns:  16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
     grid-template-rows: 200px 200px;
     margin: 70px 0;
 }
 
-.our-works-section-img img{
+.our-works-section-img img {
     width: 100%;
     height: 100%;
 }
@@ -395,10 +395,262 @@
 
 .our-works-section-button {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
 
 .our-works-section-button button {
     width: 140px;
 }
+
+/*SECTION-““““*/
+.section-“ {
+    background: url("../media/image/background-““.png") center/cover no-repeat;
+    position: relative;
+}
+
+section .container .content .top-and-center-““ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section .container .content .top-and-center-““ h6 {
+    font-size: 100px;
+    font-family: PlayfairDisplay;
+    font-weight: normal;
+    height: 93px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+section .container .content .top-and-center-““ p {
+    font-family: PlayfairDisplay;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.85;
+    color: white;
+    line-height: 1.63;
+    letter-spacing: 0.4px;
+}
+
+section .container .content .top-and-center-““ h3 {
+    font-weight: 900;
+    line-height: 1.57;
+    letter-spacing: 0.7px;
+    color: white;
+    margin-top: 52px;
+    margin-bottom: 13px;
+}
+
+section .container .content .top-and-center-““ h4 {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.69;
+}
+
+/*SWIPER-SECTION-““““*/
+
+.button-swiper-““ {
+    margin-top: 40px;
+}
+
+.button-swiper-““ .swiper-container {
+    width: 65%;
+    height: 100%;
+}
+
+
+.button-swiper-““ img {
+    width: 45px;
+    height: 45px;
+
+}
+
+/*GIVE-US-GOOD-NEWS-AND-OUR-HAPPY-CLIENT*/
+
+.give-us-a-good-news-and-our-happy-client .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+}
+
+.give-us-a-good-news {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.give-us-a-good-news-and-our-happy-client h3 {
+    font-family: PlayfairDisplay;
+    font-size: 22px;
+    letter-spacing: 1.1px;
+    color: #413d4b;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+.give-us-a-good-news form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 22px;
+    height: 45px;
+}
+
+.give-us-a-good-news form textarea {
+    padding: 20px;
+    resize: none;
+}
+
+.give-us-a-good-news form button {
+    width: 120px;
+    height: 40px;
+    border-radius: 2px;
+    border: solid 1px #00e0d0;
+    background-color: initial;
+    color: #00e0d0;
+    font-family: HammersmithOne;
+    font-weight: bolder;
+    margin-top: 21px;
+}
+
+/*OUR-HAPPY-CLIENT*/
+
+.our-happy-client {
+    margin-left: 100px;
+    width: 100%;
+}
+
+.our-happy-client-img {
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 50% 50%;
+}
+
+.our-happy-client-img img {
+    width: 80%;
+    height: 65px;
+    margin-bottom: 40px;
+    margin-right: 90px;
+
+}
+
+/*BUTTON*/
+
+.button-section {
+    background: url("../media/image/button-background.png") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-section .content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button-section p {
+    line-height: 1.86;
+    letter-spacing: 0.35px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: white;
+}
+
+.button-section h3 {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.73;
+    letter-spacing: 0.75px;
+    color: white;
+}
+
+.button-section .button-left {
+    width: 33%;
+}
+
+.button-section .button-left p {
+    margin-top: 27px;
+    margin-bottom: 80px;
+}
+
+.button-section .button-center {
+    width: 33%;
+    margin-right: 36px;
+    margin-left: 62px;
+}
+
+.button-section .button-center .button-center-address {
+    display: flex;
+    margin-top: 39px;
+    margin-bottom: 27px;
+}
+
+.button-section .button-center .button-center-address img {
+    margin-right: 16px;
+}
+
+.button-section .button-center .button-center-phone {
+    display: flex;
+}
+
+.button-section .button-center .button-center-phone img {
+    margin-right: 12px;
+    width: 17px;
+}
+
+.button-section .button-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.button-section .button-right .Subscribe-our-newsletter {
+    display: flex;
+    margin: 39px 0px 27px 0px;
+}
+
+.button-section .button-right .Subscribe-our-newsletter input[type="text"] {
+    height: 45px;
+    background: initial;
+    width: 211px;
+    opacity: 0.5;
+    border: solid 1px white;
+    text-align: center;
+    color: white;
+
+}
+
+.button-section .button-right .Subscribe-our-newsletter input[type="button"] {
+    margin-left: 10px;
+    background-image: url("../media/image/telegram-button.png");
+    background-size: 65px 40px;
+    width: 70px;
+    height: 45px;
+    opacity: 0.5;
+    border: solid 1px white;
+    background-color: white;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.button-section .button-left .button-left-help {
+    display: flex;
+    justify-content: space-between;
+    width: 120%;
+}
+
+.button-section .button-left .button-left-help p {
+    margin: 0;
+    cursor: pointer;
+
+
+}
+
