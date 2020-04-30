@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-.swiper-slide {
+.swiper-container .swiper-slide {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -13,11 +13,11 @@
     z-index: 100;
 }
 
-.swiper-pagination {
+.swiper-container.swiper-pagination {
     margin-bottom: 70px;
 }
 
-.swiper-pagination .swiper-pagination-bullet {
+.swiper-container .swiper-pagination .swiper-pagination-bullet {
     border: solid 1px white;
     opacity: 1;
     background-color: initial;
@@ -26,7 +26,7 @@
 
 }
 
-.swiper-pagination .swiper-pagination-bullet-active {
+.swiper-container .swiper-pagination .swiper-pagination-bullet-active {
     border: solid 1px #00e0d0;
     background-color: #00e0d0;
 }
@@ -304,6 +304,7 @@
 .meet-our-amazing-team-center .amazing-team-people-box .amazing-team-people-img img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .meet-our-amazing-team-center .amazing-team-people-box .amazing-team-people-name-and-profession {
@@ -389,6 +390,7 @@
 .our-works-section-img img {
     width: 100%;
     height: 100%;
+    object-fit: fill;
 }
 
 /*OUR-WORKS-SECTION-Button*/
@@ -403,20 +405,20 @@
     width: 140px;
 }
 
-/*SECTION-““““*/
-.section-“ {
+/*SECTION-OUR-SPECIALISTS*/
+.section-our-specialists {
     background: url("../media/image/background-““.png") center/cover no-repeat;
     position: relative;
 }
 
-section .container .content .top-and-center-““ {
+section .container .content .top-and-center-our-specialists {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-section .container .content .top-and-center-““ h6 {
+section .container .content .top-and-center-our-specialists h6 {
     font-size: 100px;
     font-family: PlayfairDisplay;
     font-weight: normal;
@@ -424,7 +426,7 @@ section .container .content .top-and-center-““ h6 {
     color: rgba(255, 255, 255, 0.9);
 }
 
-section .container .content .top-and-center-““ p {
+section .container .content .top-and-center-our-specialists p {
     font-family: PlayfairDisplay;
     font-size: 16px;
     font-weight: normal;
@@ -434,7 +436,7 @@ section .container .content .top-and-center-““ p {
     letter-spacing: 0.4px;
 }
 
-section .container .content .top-and-center-““ h3 {
+section .container .content .top-and-center-our-specialists h3 {
     font-weight: 900;
     line-height: 1.57;
     letter-spacing: 0.7px;
@@ -443,24 +445,24 @@ section .container .content .top-and-center-““ h3 {
     margin-bottom: 13px;
 }
 
-section .container .content .top-and-center-““ h4 {
+section .container .content .top-and-center-our-specialistsh4 {
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.69;
 }
 
 /*SWIPER-SECTION-““““*/
 
-.button-swiper-““ {
+.button-swiper-our-specialists {
     margin-top: 40px;
 }
 
-.button-swiper-““ .swiper-container {
+.button-swiper-our-specialists .swiper-container {
     width: 65%;
     height: 100%;
 }
 
 
-.button-swiper-““ img {
+.button-swiper-our-specialists img {
     width: 45px;
     height: 45px;
 
@@ -494,28 +496,29 @@ section .container .content .top-and-center-““ h4 {
 .give-us-a-good-news form {
     display: flex;
     flex-direction: column;
+    align-items: end;
 }
 
 form input {
     margin-bottom: 22px;
     height: 45px;
+    width: 100%;
+    padding: 21px;
+}
+
+.give-us-a-good-news form input:focus{
+    border: solid 1px rgba(0,0,0,.7);
+}
+
+.give-us-a-good-news form textarea:focus{
+    border: solid 1px rgba(0,0,0,.7);
 }
 
 .give-us-a-good-news form textarea {
     padding: 20px;
     resize: none;
-}
-
-.give-us-a-good-news form button {
-    width: 120px;
-    height: 40px;
-    border-radius: 2px;
-    border: solid 1px #00e0d0;
-    background-color: initial;
-    color: #00e0d0;
-    font-family: HammersmithOne;
-    font-weight: bolder;
-    margin-top: 21px;
+    margin-bottom: 21px;
+    width: 100%;
 }
 
 /*OUR-HAPPY-CLIENT*/
@@ -526,35 +529,39 @@ form input {
 }
 
 .our-happy-client-img {
-    display: grid;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .our-happy-client-img img {
-    width: 80%;
-    height: 65px;
+    width: 42%;
     margin-bottom: 40px;
-    margin-right: 90px;
 
 }
 
 /*BUTTON*/
 
-.button-section {
+footer {
     background: url("../media/image/button-background.png") center/cover no-repeat;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.button-section .content {
+footer .content {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 
 }
+.footer-center{
+    display: flex;
+    justify-content: space-between;
+}
 
-.button-section p {
+footer p {
     line-height: 1.86;
     letter-spacing: 0.35px;
     font-family: Roboto;
@@ -562,7 +569,7 @@ form input {
     color: white;
 }
 
-.button-section h3 {
+footer h3 {
     font-family: Roboto;
     font-size: 15px;
     font-weight: 900;
@@ -571,53 +578,54 @@ form input {
     color: white;
 }
 
-.button-section .button-left {
-    width: 33%;
+footer .bottom-left {
+    width: 30%;
 }
 
-.button-section .button-left p {
+footer .bottom-left p {
     margin-top: 27px;
     margin-bottom: 80px;
 }
 
-.button-section .button-center {
-    width: 33%;
-    margin-right: 36px;
-    margin-left: 62px;
+footer .bottom-center {
+    width: 30%;
+    margin-left: 36px;
+    margin-right: 60px;
 }
 
-.button-section .button-center .button-center-address {
+
+footer .bottom-center .bottom-center-address {
     display: flex;
     margin-top: 39px;
     margin-bottom: 27px;
 }
 
-.button-section .button-center .button-center-address img {
+footer .bottom-center .bottom-center-address img {
     margin-right: 16px;
 }
 
-.button-section .button-center .button-center-phone {
+footer .bottom-center .bottom-center-phone {
     display: flex;
 }
 
-.button-section .button-center .button-center-phone img {
+footer .bottom-center .bottom-center-phone img {
     margin-right: 12px;
     width: 17px;
 }
 
-.button-section .button-right {
+footer .bottom-right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 
-.button-section .button-right .Subscribe-our-newsletter {
+footer .bottom-right .Subscribe-our-newsletter {
     display: flex;
     margin: 39px 0px 27px 0px;
 }
 
-.button-section .button-right .Subscribe-our-newsletter input[type="text"] {
+footer .bottom-right .Subscribe-our-newsletter input[type="text"] {
     height: 45px;
     background: initial;
     width: 211px;
@@ -628,7 +636,7 @@ form input {
 
 }
 
-.button-section .button-right .Subscribe-our-newsletter input[type="button"] {
+footer .bottom-right .Subscribe-our-newsletter input[type="button"] {
     margin-left: 10px;
     background-image: url("../media/image/telegram-button.png");
     background-size: 65px 40px;
@@ -641,15 +649,19 @@ form input {
     cursor: pointer;
 }
 
-.button-section .button-left .button-left-help {
+footer .footer-bottom{
     display: flex;
     justify-content: space-between;
-    width: 120%;
 }
 
-.button-section .button-left .button-left-help p {
-    margin: 0;
+footer .bottom-help {
+    display: flex;
+}
+
+footer .bottom-help p {
+    margin: 0 25px 0 0;
     cursor: pointer;
+
 
 
 }

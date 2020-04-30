@@ -6,7 +6,7 @@
     font-weight: 300;
     text-decoration: none;
     outline: none;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 .container {
@@ -20,15 +20,15 @@
     z-index: 1;
     position: relative;
 }
-section{
+section, footer{
  padding: 70px 0;
 }
 
 /*BUTTON*/
 
 button{
-    width: 120px;
-    height: 40px;
+    padding: 10px 15px;
+    min-width: 120px;
     border-radius: 2px;
     border: solid 1px #00e0d0;
     background-color: initial;
