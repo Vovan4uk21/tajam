@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+h2{
+    font-size: 22px;
+}
+
 .container {
     width: 58.75%;
     margin: 0 auto;
@@ -59,6 +63,59 @@ button:hover {
     bottom: 0;
     background-image: linear-gradient(to top, rgba(9, 5, 47, .85), rgba(49, 29, 94, .85));
     position: absolute;
+}
+
+
+/*ADAPTATION 1800PX */
+
+
+@media screen and (min-width:1800px )  {
+
+
+    .header-section .content h1 {
+        font-size: 39px;
+    }
+
+    h5 {
+        font-size: 21px;
+    }
+
+    .header-nav-menu-items {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+    .watch-our-story .content h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .see-all-project a {
+        font-size: 18px;
+    }
+
+    .arrow-see-all-project {
+        width: 12px;
+        height: 12px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .our-specialists-text p{
+        font-size: 18px;
+    }
+
 }
 
 
