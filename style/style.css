@@ -1,4 +1,6 @@
 /*SWIPER*/
+
+
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -31,7 +33,9 @@
     background-color: #00e0d0;
 }
 
+
 /*HEADER*/
+
 
 .header-section {
     position: relative;
@@ -70,7 +74,9 @@
     margin: 30px 0 50px 0;
 }
 
+
 /*OUR-STORY*/
+
 
 .section-our-story {
 
@@ -100,7 +106,9 @@
     margin: 28px 0px 31px 0px;
 }
 
+
 /*WATCH-OUR-STORY*/
+
 
 .watch-our-story {
     position: relative;
@@ -126,14 +134,18 @@
     margin-top: 34px;
 }
 
+
 /*EXPERTISE-SECTION*/
+
 
 .expertise-section {
     display: flex;
     flex-direction: column;
 }
 
+
 /*EXPERTISE-TOP*/
+
 
 .expertise-top {
     display: flex;
@@ -166,7 +178,9 @@
     background-color: #413d4b;
 }
 
+
 /*EXPERTISE-CENTER-TOP*/
+
 
 .expertise-center {
     display: grid;
@@ -221,7 +235,9 @@
     border-bottom: solid 1px #c6c5c9;
 }
 
+
 /*EXPERTISE-CENTER-BOTTOM*/
+
 
 .expertise-center-bottom {
     display: flex;
@@ -242,7 +258,9 @@
     letter-spacing: 0.7px;
 }
 
+
 /*MEET-OUR-AMAZING-TEAM*/
+
 
 .meet-our-amazing-team-section {
     background: url("../media/image/meet-our-amazing-team-background.png") center/cover no-repeat;
@@ -251,7 +269,9 @@
     position: relative;
 }
 
+
 /*MEET-OUR-AMAZING-TEAM-TOP*/
+
 
 .meet-our-amazing-team-section .meet-our-amazing-team-top {
     display: flex;
@@ -283,7 +303,9 @@
     background-color: white;
 }
 
+
 /*MEET-OUR-AMAZING-TEAM-CENTER*/
+
 
 .meet-our-amazing-team-section .meet-our-amazing-team-center {
     display: flex;
@@ -328,7 +350,9 @@
     color: rgba(250, 250, 250, 0.7);
 }
 
+
 /*MEET-OUR-AMAZING-TEAM-BOTTOM*/
+
 
 .meet-our-amazing-team-bottom {
     display: flex;
@@ -346,7 +370,9 @@
     width: 140px;
 }
 
+
 /*OUR-WORKS-TOP*/
+
 
 .our-works-section .content {
     display: flex;
@@ -378,7 +404,9 @@
     display: flex;
 }
 
+
 /*OUR-WORKS-SECTION-IMG*/
+
 
 .our-works-section-main-box-img {
     display: grid;
@@ -393,7 +421,9 @@
     object-fit: fill;
 }
 
+
 /*OUR-WORKS-SECTION-Button*/
+
 
 .our-works-section-button {
     display: flex;
@@ -405,20 +435,23 @@
     width: 140px;
 }
 
+
 /*SECTION-OUR-SPECIALISTS*/
+
+
 .section-our-specialists {
     background: url("../media/image/background-““.png") center/cover no-repeat;
     position: relative;
 }
 
-section .container .content .top-and-center-our-specialists {
+section .container .content .our-specialists-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-section .container .content .top-and-center-our-specialists h6 {
+section .container .content .our-specialists-text h6 {
     font-size: 100px;
     font-family: PlayfairDisplay;
     font-weight: normal;
@@ -426,7 +459,7 @@ section .container .content .top-and-center-our-specialists h6 {
     color: rgba(255, 255, 255, 0.9);
 }
 
-section .container .content .top-and-center-our-specialists p {
+section .container .content .our-specialists-text p {
     font-family: PlayfairDisplay;
     font-size: 16px;
     font-weight: normal;
@@ -436,7 +469,7 @@ section .container .content .top-and-center-our-specialists p {
     letter-spacing: 0.4px;
 }
 
-section .container .content .top-and-center-our-specialists h3 {
+section .container .content .our-specialists-text h3 {
     font-weight: 900;
     line-height: 1.57;
     letter-spacing: 0.7px;
@@ -445,30 +478,74 @@ section .container .content .top-and-center-our-specialists h3 {
     margin-bottom: 13px;
 }
 
-section .container .content .top-and-center-our-specialistsh4 {
+section .container .content .our-specialists-text {
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.69;
 }
 
-/*SWIPER-SECTION-““““*/
 
-.button-swiper-our-specialists {
-    margin-top: 40px;
+/*SWIPER-SECTION-OUR-SPECIALISTS*/
+
+
+.specialists-texts-swiper {
+    width: 100%;
 }
 
-.button-swiper-our-specialists .swiper-container {
-    width: 65%;
+.specialists-texts-swiper .swiper-slide {
+    width: 100%;
+}
+
+.specialists-swiper {
+    width: 100%;
+}
+
+.our-specialists-carousel {
+    position: relative;
+    width: 300px;
+    margin: 45px auto 0;
+    height: 70px;
+
+}
+
+.our-specialists-carousel .specialists-swiper-next, .specialists-swiper-prev {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    z-index: 1000;
+    cursor: pointer;
+    color: #ccc;
+    width: 21px;
+    height: 21px;
+}
+
+.our-specialists-carousel .specialists-swiper-next > img, .specialists-swiper-prev > img {
+    width: 100%;
     height: 100%;
 }
 
-
-.button-swiper-our-specialists img {
-    width: 45px;
-    height: 45px;
-
+.our-specialists-carousel .specialists-swiper-prev {
+    left: -30px;
 }
 
+.our-specialists-carousel .specialists-swiper-next {
+    right: -30px
+}
+
+.specialists-swiper .swiper-slide img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.specialists-swiper .swiper-slide.swiper-slide-active > img {
+    width: 70px;
+    height: 70px;
+}
+
+
 /*GIVE-US-GOOD-NEWS-AND-OUR-HAPPY-CLIENT*/
+
 
 .give-us-a-good-news-and-our-happy-client .content {
     display: flex;
@@ -506,12 +583,12 @@ form input {
     padding: 21px;
 }
 
-.give-us-a-good-news form input:focus{
-    border: solid 1px rgba(0,0,0,.7);
+.give-us-a-good-news form input:focus {
+    border: solid 1px rgba(0, 0, 0, .7);
 }
 
-.give-us-a-good-news form textarea:focus{
-    border: solid 1px rgba(0,0,0,.7);
+.give-us-a-good-news form textarea:focus {
+    border: solid 1px rgba(0, 0, 0, .7);
 }
 
 .give-us-a-good-news form textarea {
@@ -521,7 +598,9 @@ form input {
     width: 100%;
 }
 
+
 /*OUR-HAPPY-CLIENT*/
+
 
 .our-happy-client {
     margin-left: 100px;
@@ -536,12 +615,14 @@ form input {
 }
 
 .our-happy-client-img img {
-    width: 42%;
+    width: 130px;
     margin-bottom: 40px;
-
+    height: 70px;
 }
 
-/*BUTTON*/
+
+/*FOOTER*/
+
 
 footer {
     background: url("../media/image/button-background.png") center/cover no-repeat;
@@ -556,7 +637,8 @@ footer .content {
     flex-direction: column;
 
 }
-.footer-center{
+
+.footer-center {
     display: flex;
     justify-content: space-between;
 }
@@ -619,7 +701,6 @@ footer .bottom-right {
     justify-content: space-between;
 }
 
-
 footer .bottom-right .Subscribe-our-newsletter {
     display: flex;
     margin: 39px 0px 27px 0px;
@@ -649,7 +730,7 @@ footer .bottom-right .Subscribe-our-newsletter input[type="button"] {
     cursor: pointer;
 }
 
-footer .footer-bottom{
+footer .footer-bottom {
     display: flex;
     justify-content: space-between;
 }
@@ -661,8 +742,4 @@ footer .bottom-help {
 footer .bottom-help p {
     margin: 0 25px 0 0;
     cursor: pointer;
-
-
-
 }
-
