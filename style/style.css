@@ -33,6 +33,14 @@
     background-color: #00e0d0;
 }
 
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    padding: 5px;
+}
+
+.content .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 70px;
+}
+
 
 /*HEADER*/
 
@@ -363,11 +371,6 @@
     margin-bottom: 26px;
 }
 
-.meet-our-amazing-team-bottom button {
-    width: 140px;
-}
-
-
 /*OUR-WORKS-TOP*/
 
 
@@ -406,15 +409,15 @@
 
 .our-works-section-main-box-img {
     display: grid;
-    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 200px);
     margin: 70px 0;
 }
 
 .our-works-section-img img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 

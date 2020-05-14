@@ -35,7 +35,6 @@ section, footer {
 
 button {
     padding: 10px 15px;
-    min-width: 120px;
     border-radius: 2px;
     border: solid 1px #00e0d0;
     background-color: initial;
@@ -91,6 +90,9 @@ button:hover {
         font-size: 18px;
     }
 
+
+
+
     h3 {
         font-size: 16px;
     }
@@ -114,6 +116,94 @@ button:hover {
 
     .our-specialists-text p{
         font-size: 18px;
+    }
+
+    button {
+        padding: 11px 17px;
+        font-size: 16px;
+    }
+
+}
+
+
+/*ADAPTATION 1200PX */
+
+@media screen  and (max-width: 1200px){
+
+    header .content .header-nav-menu .header-nav-menu-items {
+        font-size: 9px;
+    }
+
+    header .container .content .header-nav-menu{
+        padding: 16px 0;
+    }
+
+    .header-main-logo img {
+        width: 82px;
+    }
+
+    .header-section .content h1 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .header-section .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        padding: 3px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .watch-our-story .content h2 {
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 9px;
+    }
+
+    main .section-our-story {
+        padding: 45px 0;
+    }
+
+    main .section-our-story {
+        min-height: 352px;
+    }
+
+    .our-story-logo img {
+        width: 150px;
+    }
+
+    .see-all-project a {
+        font-size: 10px;
+    }
+
+    /*.arrow-see-all-project {
+        width: 12px;
+        height: 12px;
+    }*/
+
+    p {
+        font-size: 9px;
+    }
+
+    h4 {
+        font-size: 9px;
+    }
+
+    .our-specialists-text p{
+        font-size: 10px;
+    }
+
+    button {
+        padding: 6px 7px;
+        font-size: 9px;
     }
 
 }
@@ -146,7 +236,7 @@ header .content .header-nav-menu .header-nav-menu-items {
     color: white;
     margin: 0 7px;
     font-weight: 900;
-    padding: 30px 0;
+    padding: 3.5vh 0;
 }
 
 header .content .header-nav-menu .header-nav-menu-items:last-child {
