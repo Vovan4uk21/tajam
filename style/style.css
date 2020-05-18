@@ -331,7 +331,7 @@
 .meet-our-amazing-team-center .amazing-team-people-box .amazing-team-people-img img {
     height: 100%;
     width: 100%;
-    object-fit: initial;
+    object-fit: cover;
 }
 
 .meet-our-amazing-team-center .amazing-team-people-box .amazing-team-people-name-and-profession {
@@ -500,7 +500,7 @@ section .container .content .our-specialists-text {
 
 .our-specialists-carousel {
     position: relative;
-    width: 300px;
+    width: 350px;
     margin: 45px auto 0;
     height: 70px;
 
@@ -580,6 +580,7 @@ form input {
     height: 45px;
     width: 100%;
     padding: 21px;
+    border: solid 1px rgba(0,0,0,.1);
 }
 
 .give-us-a-good-news form input:focus {
@@ -595,6 +596,7 @@ form input {
     resize: none;
     margin-bottom: 21px;
     width: 100%;
+    border: solid 1px rgba(0,0,0,.1);
 }
 
 
@@ -617,6 +619,25 @@ form input {
     width: 37%;
     margin-bottom: 40px;
     height: 70px;
+    object-fit: contain;
+}
+
+/*OUR-HAPPY-CLIENT-SWIPER*/
+
+.our-happy-client-swiper{
+    width: 100%;
+    height: 60vh;
+    display: none;
+}
+
+.our-happy-client-swiper img{
+    width: 95%;
+    object-fit: scale-down;
+    height: 50%;
+}
+
+.content .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 30px;
 }
 
 
@@ -669,8 +690,7 @@ footer .bottom-left p {
 
 footer .bottom-center {
     width: 30%;
-    margin-left: 36px;
-    margin-right: 60px;
+    margin: 0 auto;
 }
 
 
@@ -707,7 +727,7 @@ footer .bottom-right .Subscribe-our-newsletter {
 footer .bottom-right .Subscribe-our-newsletter input[type="text"] {
     height: 45px;
     background: initial;
-    width: 211px;
+    width: 70%;
     opacity: 0.5;
     border: solid 1px white;
     text-align: center;

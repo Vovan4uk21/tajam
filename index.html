@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
-
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 </head>
@@ -25,6 +25,7 @@
                 <div class="header-main-logo">
                     <a href="#"><img src="media/image/logo-header.png"></a>
                 </div>
+
                 <div class="header-nav-menu">
                     <a class="header-nav-menu-items" href="#">HOME</a>
                     <a class="header-nav-menu-items" href="#">ABOUT</a>
@@ -34,6 +35,9 @@
                     <a class="header-nav-menu-items" href="#">PEOPLE SAY</a>
                     <a class="header-nav-menu-items" href="#">CONTACT</a>
 
+                </div>
+                <div class="burger">
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -119,37 +123,37 @@
                 <hr>
             </div>
             <div class="expertise-center">
-                <div class="expertise-box-info">
+                <div class="expertise-box-info expertise-box-info-border">
                     <img src="./media/image/TV-icon.png" alt="TV-icon">
                     <h3>WEB DESIGN & DEVELOPMENT</h3>
                     <h5>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
                         Aenean.</h5>
                 </div>
-                <div class="expertise-box-info">
+                <div class="expertise-box-info expertise-box-info-border">
                     <img src="./media/image/brush-icon.png" alt="brush-icon">
                     <h3>BRANDING IDENTITY</h3>
                     <h5>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
                         Aenean.</h5>
                 </div>
-                <div class="expertise-box-info">
+                <div class="expertise-box-info expertise-box-info-border">
                     <img src="./media/image/phone-icon.png" alt="phone-icon">
                     <h3>MOBILE APP</h3>
                     <h5>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
                         Aenean.</h5>
                 </div>
-                <div class="expertise-box-info">
+                <div class="expertise-box-info expertise-box-info-border">
                     <img src="./media/image/optimization-icon.png" alt="optimization-icon">
                     <h3>SEARCH ENGINE OPTIMIZATION</h3>
                     <h5>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
                         Aenean.</h5>
                 </div>
-                <div class="expertise-box-info">
+                <div class="expertise-box-info expertise-box-info-border">
                     <img src="./media/image/game-phone-icon.png" alt="game-phone-icon">
                     <h3>GAME DEVELOPMENT</h3>
                     <h5>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
                         Aenean.</h5>
                 </div>
-                <div class="expertise-box-info">
+                <div class="expertise-box-info expertise-box-info-border">
                     <img src="./media/image/heart-love-icon.png" alt="heart-love-icon">
                     <h3>MADE WITH LOVE</h3>
                     <H5>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
@@ -411,7 +415,34 @@
                         <img src="./media/image/levi's-logo.jpg" alt="img">
                         <img src="./media/image/billabong-logo.png" alt="img">
                     </div>
-
+                    <div class="our-happy-client-swiper">
+                        <div class="swiper-container swiper-container-our-happy-client">
+                            <div class="swiper-wrapper swiper-wrapper-our-happy-client">
+                                <div class="swiper-slide swiper-slide-our-happy-client"><img
+                                        src="./media/image/zara_Logo_2.svg.png" alt="img"></div>
+                                <div class="swiper-slide swiper-slide-our-happy-client"><img
+                                        src="./media/image/mango.png" alt="img"></div>
+                                <div class="swiper-slide swiper-slide-our-happy-client"><img
+                                        src="./media/image/barnews-new-york.png" alt="img"></div>
+                                <div class="swiper-slide swiper-slide-our-happy-client"><img
+                                        src="./media/image/gucci-logo.png" alt="img"></div>
+                                <div class="swiper-slide swiper-slide-our-happy-client"><img
+                                        src="./media/image/calvin-klein-logo.png" alt="img"></div>
+                                <div class="swiper-slide swiper-slide-our-happy-client"><img
+                                        src="./media/image/logo_NIKE.svg.png" alt="img"></div>
+                                <div class="swiper-slide swiper-slide-our-happy-client"><img
+                                        src="./media/image/converse-logo.png" alt="img"></div>
+                                <div class="swiper-slide swiper-slide-our-happy-client"><img
+                                        src="./media/image/puma-logo-.png" alt="img"></div>
+                                <div class="swiper-slide swiper-slide-our-happy-client"><img
+                                        src="./media/image/levi's-logo.jpg" alt="img"></div>
+                                <div class="swiper-slide swiper-slide-our-happy-client"><img
+                                        src="./media/image/billabong-logo.png" alt="img"></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination swiper-pagination-our-happy-client"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -496,15 +527,47 @@
         initialSlide: 2,
         spaceBetween: 10,
         centeredSlides: true,
+
         navigation: {
             nextEl: '.specialists-swiper-next',
             prevEl: '.specialists-swiper-prev',
         },
+        breakpoints: {
+            480: {
+
+                spaceBetween: 0,
+                slidesPerView: 5,
+                width: 350,
+            },
+
+            0: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+                width: 250,
+                allowTouchMove: true
+            }
+        }
     });
 
 
     swiper3.controller.control = swiper2;
     swiper2.controller.control = swiper3;
+
+
+    var swiper = new Swiper('.swiper-container-our-happy-client', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination-our-happy-client',
+        },
+    });
 </script>
+<script>
+    $(document).ready(function () {
+        $('.burger').click(function (event) {
+            $('.burger,.header-nav-menu').toggleClass('active');
+        });
+    });
+</script>
+
 </body>
 </html>
